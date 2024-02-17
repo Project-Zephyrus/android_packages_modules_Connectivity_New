@@ -503,7 +503,7 @@ public class Tethering {
             }
         };
         mContext.getContentResolver().registerContentObserver(Settings.Secure.getUriFor(
-                "tethering_allow_vpn_upstreams"), false, vpnSettingObserver);
+                Settings.Secure.TETHERING_ALLOW_VPN_UPSTREAMS), false, vpnSettingObserver);
     }
 
     private class TetheringThreadExecutor implements Executor {
